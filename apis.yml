@@ -1,7 +1,14 @@
 aid: efference-ai
 name: Efference AI
-description: Efference AI is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Efference AI is a robotics perception and compute company building the hardware-plus-software
+  foundation for data-driven robotics at scale. Founded in 2025 by Gianluca Bencomo and based in San Francisco
+  (Y Combinator Fall 2025), Efference treats machine vision as a software problem, pairing affordable
+  stereo-camera hardware with learned 3D-perception foundation models ("cheap hardware + great algorithms").
+  Its M1 device targets distributed, robotics-grade data collection at scale, while the H1 stereo system is
+  built for real-time cloud inference with foundation models. The company serves autonomous vehicles, humanoid
+  robots, and drones, and publishes hardware-interfacing documentation and firmware through its GitHub
+  organization. As of this profile Efference exposes no public developer API, OpenAPI, or authenticated
+  service surface.
 url: https://raw.githubusercontent.com/api-evangelist/efference-ai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +16,31 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://raw.githubusercontent.com/EfferenceAI/docs/main/logo/light.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Robotics
+- Computer Vision
+- Perception
+- Hardware
+- Stereo Cameras
+- Edge AI
+- Autonomous Systems
+- Foundation Models
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/efference-ai-domain-security.yml
 - type: Website
   url: https://efference.ai
+- type: Documentation
+  url: https://docs.efference.ai
+- type: GitHubOrganization
+  url: https://github.com/EfferenceAI
+- type: Support
+  url: https://efference.ai/contact/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
